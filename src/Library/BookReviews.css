@@ -1,0 +1,33 @@
+/* BookReviews.css */
+
+.book-reviews {
+    margin-top: 20px;
+  }
+  
+  .review-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .average-rating {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .star-rating {
+    color: #ffd700; /* Gold color for stars */
+  }
+  
+  .leave-review {
+    margin-top: 20px;
+  }
+  
+  .leave-review textarea,
+  .leave-review input,
+  .leave-review button {
+    margin-bottom: 10px;
+  }
+  
+  /* Customize styles as needed */
+  

@@ -1,0 +1,33 @@
+/* Add the styles to the '.browse-container' element within the 'BrowsePopover' component */
+.browse-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    gap: 50px;
+  
+    /* Styles for link underlines on hover */
+    position: relative;
+  }
+  
+  .browse-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .browse-container a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #faca22;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: all 0.5s;
+  }
+  
+  .browse-container a:hover::after {
+    width: 100%;
+  }
+  

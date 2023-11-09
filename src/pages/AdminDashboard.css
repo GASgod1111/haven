@@ -1,0 +1,121 @@
+/* AdminDashboard.css */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+.admin-dashboard {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 24px;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.section {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Default direction is column */
+}
+
+.section:hover {
+  background-color: #f9f9f9;
+}
+
+/* Image styling */
+.section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.add-update-book {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.add-update-book h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.action-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr); /* Create 4 rows with equal height */
+  grid-gap: 20px; /* Adjust the gap between rows */
+}
+
+/* Styling for the Books Section */
+.section.books {
+  grid-row: 1; /* Place in the first row */
+}
+
+/* Styling for the Library Section */
+.section.library {
+  grid-row: 2; /* Place in the second row */
+}
+
+/* Styling for the Book Orders Section */
+.section.bookOrders {
+  grid-row: 3; /* Place in the third row */
+}
+
+/* Styling for the Lending Requests Section */
+.section.lendingRequests {
+  grid-row: 4; /* Place in the fourth row */
+}
